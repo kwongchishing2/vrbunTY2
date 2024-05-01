@@ -26,6 +26,7 @@ public class StartTimer : MonoBehaviour
             countdownText.text = "START!!!";
             // Lhand.SetActive(true);
             //  Rhand.SetActive(true);
+            Destroy(this.gameObject);
             Destroy(countdownText, 4f);
             // 倒數計時結束後的操作，例如觸發事件或執行其他代碼
         }
