@@ -17,10 +17,13 @@ public class npc_climb : MonoBehaviour
             targetPosition += transform.forward;
             climbingSpeed = Random.Range(minClimbingSpeed, maxClimbingSpeed);
             transform.position = Vector3.Lerp(transform.position, targetPosition, climbingSpeed * Time.deltaTime);
+
             
         }if(pick){
                  this.gameObject.GetComponent<Animator>().SetBool("pick",true);
             }
+
+
         }
 
     public void startPick(){
