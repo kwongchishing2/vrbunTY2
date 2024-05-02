@@ -28,13 +28,14 @@ public class RopeDistanceCheck : MonoBehaviour
         if (grounddistance > 10f||checkpointtick1.dead)
         {            
             finishToBlackPanel.SetActive(true);
-            die.Play();
-            uitext.text = "!!!!!!!!!!Tutorial Level Finish!!!!!!!!!!";
-            Destroy(this.gameObject);
-            colliderBun.bunCount += 3;
+           // die.Play();
+            uitext.text = "!!!!!!!!!!Tutorial Level Finish!!!!!!!!!!";           
+            colliderBun.bunCount=4;
             colliderBun.bunCountText.text = colliderBun.bunCount.ToString();
             finishTutor=1;
             PlayerPrefs.SetInt("finishTutor", finishTutor);
+            //Destroy(this.gameObject,3f);
+            this.GetComponent<Animator>().enabled = false;
         }
         
     }

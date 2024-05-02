@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/test.unity
     guid: 8fdc53d458eb7174992d41694509cb86
+  - enabled: 1
+    path: Assets/Scenes/singleplayer1.unity
+    guid: d5f8f359291c6ab4d8cd2e8ce8d03591
+  - enabled: 1
+    path: Assets/Scenes/singleplayer1cc.unity
+    guid: c12856390d034ab4a9451d0931bdcde2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 68f8d902fa5d8054bb8f9d7d023b3696, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: d2c927d3c3e200f409798cb0f2d50ea6, type: 2}

@@ -6,7 +6,6 @@ public class Timer:MonoBehaviour{
 
     private void Start()
     {
-       // countdownText = GetComponent<Text>();
         currentTime = totalTime;
     }
 

@@ -8,14 +8,17 @@ public class colliderBun : MonoBehaviour
     public int bunCount;
     public GameObject NPC;
     public AudioSource pulldown;
-    public bool collected;
+    public bool collected=false;
     private void OnTriggerEnter(Collider other){
-        if (other.tag == "cangrabbun") collected=true;Destroy(other.gameObject);bunCount++; bunCountText.text = bunCount.ToString(); this.gameObject.GetComponent<AudioSource>().Play();
-             pulldown.Play(); tutorialText.text = "                         Next, pull your opponent down and steal his buns.";
+        if (other.tag == "cangrabbun")
+        {
+            collected = true; Destroy(other.gameObject); bunCount++; bunCountText.text = bunCount.ToString(); this.gameObject.GetComponent<AudioSource>().Play();
+            pulldown.Play(); tutorialText.text = "                         Next, pull your opponent down and steal his buns.";
+        }
     }
     void Update()
     {
-        collected=checkpointtick1.collected;
+       // collected=checkpointtick1.collected;
         if (collected)
         {
             NPC.SetActive(true);

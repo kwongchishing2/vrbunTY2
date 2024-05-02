@@ -7,4 +7,12 @@ public class loadscene : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+    public void LoadScene1ive(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+    public void LoadScene1cc(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 }
